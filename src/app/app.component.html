@@ -1,0 +1,42 @@
+<div id="happyNewYear" (click)="hideHappyNewYear($event);" style="margin: -10px; background-image: url('happynewyear.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-position: center; background-size: cover;" [style.display]="happyNewYearVisible ? 'block' : 'none'"></div>
+<div class="countdowncircle" [style.display]="countdowncircleVisible ? 'block' : 'none'">{{countDownNumber}}</div>
+<div class=container>
+  <table style="width: 100%;">
+    <tr>
+      <td style="width: 55%; vertical-align: top;">
+        <div>
+          <div class="card" *ngFor="let number of square_number; let i = index; let c = count"><span class="square">{{square_number[c - i - 1]}}</span></div>
+        </div>
+      </td>
+      <td style="width: 45%; vertical-align: top;">
+        <table style="width: 100%;">
+          <tr style="float: right;">
+            <td>
+              <span style="cursor: pointer; color: blue;" (click)="countdown($event);">倒數計時</span> 
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+              <span style="cursor: pointer; color: blue;" (click)="resetBingo($event);">重置</span>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <span style="cursor: pointer; color: blue;" (click)="getNumber($event);">抽號</span>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </td>
+          </tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr><td><span class="countdown" [style.visibility]="countdownVisible ? 'visible' : 'hidden'">{{countdownMessage}}</span></td></tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr>
+            <td>
+              <div class="circle" [style.visibility]="circleVisible ? 'visible' : 'hidden'" (click)="getNumber($event);">{{number}}</div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>   
+  </table>
+</div>
+<!--
+<router-outlet></router-outlet>
+-->

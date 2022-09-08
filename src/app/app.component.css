@@ -1,0 +1,79 @@
+
+/* * {
+    outline: 1px solid red;
+}
+
+.container {
+    overflow: hidden;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+.middle {
+    margin-right: 0;
+} */
+
+.card {
+    font-size: 50px;
+    min-width: 150px;
+    max-width: 150px;
+    display: inline-flex;
+    /*background-color: #E1D6A9;*/
+    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    margin: 2px 2px 2px 2px;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    padding: 5px;
+    opacity: 1;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    background-color: #ffe140;
+    outline: 3px solid red;
+    /*padding-bottom: 5px;*/
+    /*background: -webkit-linear-gradient(45deg, #E1D6A9, #E1D6A9);*/
+  }
+
+  .circle {
+    font-size: 600px;
+    border-radius: 99em;
+    background-color: red;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    -moz-user-select: none;  /* for Firefox */ 
+    -webkit-user-select: none;   /* for Chrome */
+  }
+
+  .square {
+    font-size: 150px;
+    margin: auto;
+    border: 0px;
+    /* width: 50px;
+    height: 50px; */
+  }
+
+  .countdown {
+    font-size: 36px;
+    color: red;
+    font-weight: 900;
+  }
+
+  .countdowncircle {
+    font-size: 700px;
+    text-align: center;
+    border-radius: 99em;
+    background-color: red;
+    font-weight: 900;
+    margin: 50px auto 500px auto;
+    height: 800px;
+    vertical-align: middle;
+    width: 800px;
+  }
